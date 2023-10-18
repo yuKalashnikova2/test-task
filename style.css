@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;700&family=Roboto:wght@400;500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ebebf1;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ebebf1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ebebf1;
+}
+input {
+  outline: none;
+  border: transparent;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+}
+.container-content {
+  padding: 0 100px 0 100px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 5px #ebebf1;
+}
+
+.search {
+  border: 1px solid #ebebf1;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 60px 0 60px;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0 8px 10px;
+}
+.search-input img {
+  width: 24px;
+  height: 24px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  border-left: 1px solid #ebebf1;
+  height: 80px;
+  padding-left: 19px;
+  cursor: pointer;
+}
+.user-name {
+  color: #768298;
+}
+.main {
+  margin-top: 70px;
+}
+.main-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 57.6px;
+  text-transform: uppercase;
+}
+.main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+  padding: 27px;
+  width: 286px;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: -3px 0px 10px 0px #ebebf1;
+}
+
+@media (max-width: 767px) {
+  .container-content {
+    padding: 0 15px;
+  }
+  .header {
+    padding: 0;
+    flex-direction: column;
+  }
+  .mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 17px 0;
+    padding: 0 21px;
+  }
+  .user {
+    display: none;
+  }
+  .search {
+    border-radius: 0px;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    padding: 25px;
+  }
+  .card img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .mobile-user {
+    display: none;
+  }
+}
+@media (width: 768px) {
+  .card {
+    width: 230px;
+    padding: 15px;
+  }
+}
